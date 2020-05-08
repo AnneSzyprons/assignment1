@@ -21,7 +21,7 @@ Annemarie Szyprons, 11141379
 `|` redirects the output/command into another program
 
 # Exercise 04.3 #
-`grep -E '[0-9]{4}-[0-9]{3}[X|0-9]' *.tsv | wc -l`
+`cut -f 6 *.tsv | grep -E '[0-9]{4}-[0-9]{3}[X|0-9]' | wc -l`
 
 `grep -E` for using extended regular expressions
 
@@ -44,7 +44,7 @@ Annemarie Szyprons, 11141379
 `uniq ` prints only unique occurrences
 
 # Exercise 04.6 #
-`grep -ohE '[0-9]{4}-[0-9]{3}[X|0-9]' *.tsv | sort -n | uniq`
+`cut -f 6 *.tsv | grep -ohE '[0-9]{4}-[0-9]{3}[X|0-9]' | sort -n | uniq`
 
 `-o` shows only the part of a line matching pattern
 
