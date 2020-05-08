@@ -37,11 +37,11 @@ Annemarie Szyprons, 11141379
 `sed '/^$/d'` command for deleting blank rows
 
 # Exercise 04.5 #
-`cut -f2 *.tsv | sed '/^$/d' | sort | uniq -u`
+`cut -f2 *.tsv | sed '/^$/d' | sort | uniq`
 
 `sort` sorts content of the file, line by line
 
-`uniq -u` prints only unique occurrences that are not repeated
+`uniq ` prints only unique occurrences
 
 # Exercise 04.6 #
 `grep -ohE '[0-9]{4}-[0-9]{3}[X|0-9]' *.tsv | sort -n | uniq`
