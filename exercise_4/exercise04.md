@@ -9,7 +9,7 @@ Annemarie Szyprons, 11141379
 
 `'china|chinese'` prints either china or chinese.
 
-`|` is in this case a this OR that.
+`|` is in this case this _OR_ that.
 
 `*.tsv` finds all tsv-files
 
