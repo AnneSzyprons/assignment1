@@ -1,0 +1,3 @@
+FellowshipRing.txt:2470
+ReturnKing.txt:5234
+TwoTowers.txt:6012

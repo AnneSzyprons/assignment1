@@ -1,0 +1,5 @@
+    109 Frodo
+     56 Gandalf
+     46 Sam
+     32 Smeagol
+     27 Saruman

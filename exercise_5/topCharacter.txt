@@ -1,0 +1,5 @@
+    206 Frodo
+    180 Sam
+    170 Gandalf
+    157 Aragorn
+    149 Pippin
