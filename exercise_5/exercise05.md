@@ -1,4 +1,5 @@
 ## Exercise 5.2. ##
+
 {step} {change-command} 
 1. remove column {column} 
 2. blank down cells in {char}
@@ -43,7 +44,9 @@
 41. Download clean openRefine project as CSV 
 
 ## Exercise 5.3. ##
+
 **5.3.1.**
+
 `cat lotr_schript_szyprons.csv | wc -l` to print number of lines of the script
 
 `awk -F "," '{print $2}' lotr_script_szyprons.csv | tr '[:punct:]' ' ' | tr ' ' '\n' | sort | uniq -ic | sort -r | wc -l`
@@ -63,6 +66,7 @@
 `wc -l` to print number of lines
 
 **5.3.2.**
+
 `awk -F "," '{if($3 == "The_Return_of_the_King") print $2}' lotr_script_szyprons.csv | tr '[:punct:]' ' ' | tr ' ' '\n' | wc -w`
 
 `awk -F "," '{if($3 == "The_Two_Towers") print $2}' lotr_script_szyprons.csv | tr '[:punct:]' ' ' | tr ' ' '\n' | wc -w`
@@ -81,6 +85,7 @@ Unfortunalety, I wasn't able to print the number of words all in one command. Th
 
 
 **5.3.3.**
+
 `awk -F "," '{print $1}' lotr_script_szyprons.csv | sort | uniq -ic | sort -nr | head -5`
 
 `awk -F "," '{print $1}' filename` to split each input line into fields by consider "," as the seperator and print only column one {character}
@@ -94,7 +99,9 @@ Unfortunalety, I wasn't able to print the number of words all in one command. Th
 `head -5` to show top five results
 
 **5.3.4.**
+
 At first, I saved the results of 5.3.1. in uniq_words.txt and created an extra textfile with all characters in character.txt. This made it easier to compare those two files and to filter the matching patterns.
+
 `awk -F " " 'n[$2][$2]++' character.txt uniq_words.txt | head -5`
 
 `awk -F " "` to split each input line into fields by consider " " as the seperator
